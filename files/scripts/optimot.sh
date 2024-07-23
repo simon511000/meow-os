@@ -5,6 +5,4 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-# Your code goes here.
-echo 'This is an example shell script'
-echo 'Scripts here will run during build if specified in recipe.yml'
+yes 1 | sudo sh -c "$(curl -fsSL https://steevelefort.github.io/optimot-install/install.sh)"
