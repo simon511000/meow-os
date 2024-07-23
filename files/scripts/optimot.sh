@@ -5,4 +5,6 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-yes 1 | sudo sh -c "$(curl -fsSL https://steevelefort.github.io/optimot-install/install.sh)"
+sudo sh -c "$(curl -fsSL https://steevelefort.github.io/optimot-install/install.sh)" <<< "1
+Oui
+"
