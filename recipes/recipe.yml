@@ -10,6 +10,12 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: rpm-ostree
+    repos:
+      - https://download.opensuse.org/repositories/home:tschmitz:activate-linux/Fedora_Rawhide/home:tschmitz:activate-linux.repo
+    install:
+      - activate-linux
+
   - type: files
     files:
       - source: system
@@ -18,6 +24,7 @@ modules:
   - type: script
     scripts:
       - optimot.sh
+      - HuionTablet_LinuxDriver_v15.0.0.162.x86_64/install.sh
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
