@@ -13,7 +13,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://download.opensuse.org/repositories/home:tschmitz:activate-linux/Fedora_Rawhide/home:tschmitz:activate-linux.repo
-      - https://copr.fedorainfracloud.org/coprs/g/kernel-vanilla/mainline/repo/fedora-40/group_kernel-vanilla-mainline-fedora-40.repo
+      - https://copr.fedorainfracloud.org/coprs/g/kernel-vanilla/mainline/repo/fedora-41/group_kernel-vanilla-mainline-fedora-41.repo
     install:
       - activate-linux
 
