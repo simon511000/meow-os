@@ -1,1 +1,0 @@
-rpm-ostree upgrade 'kernel*'

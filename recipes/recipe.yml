@@ -16,6 +16,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/g/kernel-vanilla/mainline/repo/fedora-40/group_kernel-vanilla-mainline-fedora-40.repo
     install:
       - activate-linux
+      - 'kernel*''
 
   - type: files
     files:
@@ -24,7 +25,6 @@ modules:
 
   - type: script
     scripts:
-      - kernel.sh
       - optimot.sh
       - HuionTablet_LinuxDriver_v15.0.0.162.x86_64/install.sh
 
