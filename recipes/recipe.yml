@@ -25,7 +25,7 @@ modules:
   - type: script
     scripts:
       - optimot.sh
-      - HuionTablet_LinuxDriver_v15.0.0.162.x86_64/install.sh
+      # - HuionTablet_LinuxDriver_v15.0.0.162.x86_64/install.sh
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
