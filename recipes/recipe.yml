@@ -16,7 +16,6 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/g/kernel-vanilla/mainline/repo/fedora-40/group_kernel-vanilla-mainline-fedora-40.repo
     install:
       - activate-linux
-      - 'kernel*''
 
   - type: files
     files:
