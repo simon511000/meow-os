@@ -5,7 +5,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/aurora-dx
-image-version: 40 # latest is also supported if you want new updates ASAP
+image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -13,6 +13,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://download.opensuse.org/repositories/home:tschmitz:activate-linux/Fedora_Rawhide/home:tschmitz:activate-linux.repo
+      - https://copr.fedorainfracloud.org/coprs/g/kernel-vanilla/mainline/repo/fedora-40/group_kernel-vanilla-mainline-fedora-40.repo
     install:
       - activate-linux
 
@@ -23,6 +24,7 @@ modules:
 
   - type: script
     scripts:
+      - kernel.sh
       - optimot.sh
       - HuionTablet_LinuxDriver_v15.0.0.162.x86_64/install.sh
 
